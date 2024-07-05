@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DentalKart.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>0AB17D96EFF9D4CDD71A7096C2897862F33B4125</string>
+				<key>dateExpires</key>
+				<string>13/10/23</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>0AB17D96EFF9D4CDD71A7096C2897862F33B4125</string>
+						<key>dateExpires</key>
+						<string>13/10/23</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>Razorpay.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>X4M7C74S2Y</string>
+						<key>name</key>
+						<string>VASA DENTICITY PRIVATE LIMITED</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.2.5</string>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>60</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>0AB17D96EFF9D4CDD71A7096C2897862F33B4125</string>
+						<key>dateExpires</key>
+						<string>13/10/23</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>WebEngage.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>X4M7C74S2Y</string>
+						<key>name</key>
+						<string>VASA DENTICITY PRIVATE LIMITED</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>5.2.10</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>X4M7C74S2Y.com.dentalkart.vasadental</string>
+				<key>aps-environment</key>
+				<string>development</string>
+				<key>com.apple.developer.applesignin</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>X4M7C74S2Y</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>DentalKart.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>ca965dcb-7cb2-4e9c-8501-5b74372d28e0</string>
+				<key>dateExpires</key>
+				<string>13/10/23</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.dentalkart.vasadental</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>X4M7C74S2Y</string>
+				<key>name</key>
+				<string>VASA DENTICITY PRIVATE LIMITED</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>9.0.4</string>
+		</dict>
+	</array>
+</dict>
+</plist>

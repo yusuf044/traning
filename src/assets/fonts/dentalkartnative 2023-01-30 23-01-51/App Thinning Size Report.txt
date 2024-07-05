@@ -1,0 +1,246 @@
+
+App Thinning Size Report for All Variants of dentalkartnative
+
+Variant: DentalKart-024CE95D-D168-499C-B217-5A6338414344.ipa
+Supported variant descriptors: [device: iPad5,1, os-version: 12.2], [device: iPad4,5, os-version: 12.2], [device: iPad6,12, os-version: 12.2], [device: iPad4,2, os-version: 12.2], [device: iPad5,4, os-version: 12.2], [device: iPad4,3, os-version: 12.2], [device: iPad4,7, os-version: 12.2], [device: iPad6,7, os-version: 12.2], [device: iPad4,9, os-version: 12.2], [device: iPad4,1, os-version: 12.2], [device: iPad7,5, os-version: 12.2], [device: iPad4,4, os-version: 12.2], [device: iPad6,8, os-version: 12.2], [device: iPad4,6, os-version: 12.2], [device: iPad5,3, os-version: 12.2], [device: iPad6,11, os-version: 12.2], [device: iPad7,6, os-version: 12.2], [device: iPad4,8, os-version: 12.2], and [device: iPad5,2, os-version: 12.2]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-0BFC7C3E-734E-438B-A7BB-8BE17573D86A.ipa
+Supported variant descriptors: [device: iPhone7,1, os-version: 12.0] and [device: iPhone8,2, os-version: 12.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-0CBECA87-177B-415B-99D2-EB570E876AC2.ipa
+Supported variant descriptors: [device: iPad8,10, os-version: 13.0], [device: iPad6,3, os-version: 13.0], [device: iPad11,1, os-version: 13.0], [device: iPad8,1, os-version: 14.0], [device: iPad7,1, os-version: 14.0], [device: iPad7,1, os-version: 13.0], [device: iPad8,6, os-version: 13.0], [device: iPad7,2, os-version: 14.0], [device: iPad8,5, os-version: 14.0], [device: iPad11,4, os-version: 14.0], [device: iPad8,8, os-version: 14.0], [device: iPad8,4, os-version: 14.0], [device: iPad8,2, os-version: 14.0], [device: iPad8,3, os-version: 14.0], [device: iPad13,1, os-version: 14.0], [device: iPad11,1, os-version: 14.0], [device: iPad11,2, os-version: 14.0], [device: iPad8,7, os-version: 13.0], [device: iPad8,7, os-version: 14.0], [device: iPad8,4, os-version: 13.0], [device: iPad11,3, os-version: 14.0], [device: iPad13,11, os-version: 14.0], [device: iPad8,6, os-version: 14.0], [device: iPad8,1, os-version: 13.0], [device: iPad7,3, os-version: 14.0], [device: iPad8,5, os-version: 13.0], [device: iPad13,5, os-version: 14.0], [device: iPad7,4, os-version: 14.0], [device: iPad7,2, os-version: 13.0], [device: iPad8,9, os-version: 13.0], [device: iPad6,4, os-version: 13.0], [device: iPad13,10, os-version: 14.0], [device: iPad13,6, os-version: 14.0], [device: iPad8,8, os-version: 13.0], [device: iPad13,2, os-version: 14.0], [device: iPad8,11, os-version: 13.0], [device: MacFamily20,1, os-version: 14.0], [device: iPad8,3, os-version: 13.0], [device: iPad7,4, os-version: 13.0], [device: iPad6,3, os-version: 14.0], [device: iPad13,9, os-version: 14.0], [device: iPad11,4, os-version: 13.0], [device: iPad11,2, os-version: 13.0], [device: iPad8,12, os-version: 14.0], [device: iPad13,8, os-version: 14.0], [device: iPad8,2, os-version: 13.0], [device: iPad11,3, os-version: 13.0], [device: iPad8,10, os-version: 14.0], [device: iPad7,3, os-version: 13.0], [device: iPad6,4, os-version: 14.0], [device: iPad8,12, os-version: 13.0], [device: iPad13,7, os-version: 14.0], [device: iPad8,9, os-version: 14.0], [device: iPad13,4, os-version: 14.0], and [device: iPad8,11, os-version: 14.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-1924AAA8-BEB6-473B-AE70-8A652F175782.ipa
+Supported variant descriptors: [device: iPhone9,3, os-version: 11.0], [device: iPhone10,1, os-version: 11.0], [device: iPhone10,4, os-version: 11.0], and [device: iPhone9,1, os-version: 11.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-1A207E96-23E2-42C2-A6CF-E15430A63CF4.ipa
+Supported variant descriptors: [device: iPhone8,2, os-version: 11.0] and [device: iPhone7,1, os-version: 11.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-1C53377A-4536-4EE3-9731-A3985B36A9B4.ipa
+Supported variant descriptors: [device: iPhone10,1, os-version: 12.0], [device: iPhone10,4, os-version: 12.0], [device: iPhone9,1, os-version: 12.0], and [device: iPhone9,3, os-version: 12.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-1D02ECD1-1D86-4D3B-8B59-78EAC63D0FBB.ipa
+Supported variant descriptors: [device: iPhone8,1, os-version: 13.0], [device: iPod9,1, os-version: 14.0], [device: iPhone8,1, os-version: 14.0], [device: iPhone8,4, os-version: 13.0], [device: iPod9,1, os-version: 13.0], and [device: iPhone8,4, os-version: 14.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-28ABB39D-CED1-4E90-BA17-78C6641A393C.ipa
+Supported variant descriptors: [device: iPhone12,1, os-version: 13.0], [device: iPhone11,8, os-version: 14.0], [device: iPhone12,1, os-version: 14.0], and [device: iPhone11,8, os-version: 13.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-351D5487-DF83-4490-A40D-9F291CD8AF90.ipa
+Supported variant descriptors: [device: iPhone9,2, os-version: 12.0], [device: iPhone10,3, os-version: 12.0], [device: iPhone10,6, os-version: 12.0], [device: iPhone11,6, os-version: 12.0], [device: iPhone10,2, os-version: 12.0], [device: iPhone11,4, os-version: 12.0], [device: iPhone9,4, os-version: 12.0], [device: iPhone11,2, os-version: 12.0], and [device: iPhone10,5, os-version: 12.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-35C00510-F5F6-46D4-A0C6-51B1F17F4BD5.ipa
+Supported variant descriptors: [device: iPhone10,3, os-version: 14.0], [device: iPhone9,4, os-version: 13.0], [device: iPhone10,2, os-version: 14.0], [device: iPhone12,3, os-version: 13.0], [device: iPhone10,2, os-version: 13.0], [device: iPhone12,5, os-version: 14.0], [device: iPhone9,4, os-version: 14.0], [device: iPhone9,2, os-version: 13.0], [device: iPhone11,6, os-version: 14.0], [device: iPhone10,5, os-version: 13.0], [device: iPhone10,6, os-version: 13.0], [device: iPhone12,5, os-version: 13.0], [device: iPhone11,6, os-version: 13.0], [device: iPhone11,2, os-version: 13.0], [device: iPhone13,2, os-version: 14.0], [device: iPhone10,6, os-version: 14.0], [device: iPhone13,3, os-version: 14.0], [device: iPhone11,4, os-version: 13.0], [device: iPhone13,4, os-version: 14.0], [device: iPhone11,4, os-version: 14.0], [device: iPhone12,3, os-version: 14.0], [device: iPhone9,2, os-version: 14.0], [device: iPhone13,1, os-version: 14.0], [device: iPhone11,2, os-version: 14.0], [device: iPhone10,3, os-version: 13.0], and [device: iPhone10,5, os-version: 14.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-3E2F369B-AC27-41A6-8BB0-0A9DC58FA329.ipa
+Supported variant descriptors: [device: iPhone11,8, os-version: 16.0], [device: iPhone11,8, os-version: 15.0], [device: iPhone12,1, os-version: 15.0], and [device: iPhone12,1, os-version: 16.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-4152EE80-EE34-4B7D-BDBE-957C24A80D27.ipa
+Supported variant descriptors: [device: iPad4,5, os-version: 12.0], [device: iPad7,5, os-version: 12.0], [device: iPad7,6, os-version: 12.0], [device: iPad4,7, os-version: 12.0], [device: iPad5,4, os-version: 12.0], [device: iPad6,7, os-version: 12.0], [device: iPad4,6, os-version: 12.0], [device: iPad6,11, os-version: 12.0], [device: iPad6,12, os-version: 12.0], [device: iPad6,8, os-version: 12.0], [device: iPad4,2, os-version: 12.0], [device: iPad4,3, os-version: 12.0], [device: iPad4,8, os-version: 12.0], [device: iPad4,9, os-version: 12.0], [device: iPad5,2, os-version: 12.0], [device: iPad5,1, os-version: 12.0], [device: iPad5,3, os-version: 12.0], [device: iPad4,1, os-version: 12.0], and [device: iPad4,4, os-version: 12.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-524CDF5B-FEC0-491D-9E63-F4F6534E7951.ipa
+Supported variant descriptors: [device: iPad8,5, os-version: 15.0], [device: iPad13,17, os-version: 16.0], [device: iPad14,5-B, os-version: 16.0], [device: iPad11,4, os-version: 16.0], [device: iPad14,6-B, os-version: 16.0], [device: iPad11,3, os-version: 16.0], [device: iPad14,1, os-version: 15.0], [device: iPad14,6-A, os-version: 16.0], [device: iPad8,6, os-version: 15.0], [device: iPad6,4, os-version: 15.0], [device: iPad13,7, os-version: 16.0], [device: iPad7,2, os-version: 15.0], [device: iPad8,3, os-version: 15.0], [device: iPad6,4, os-version: 16.0], [device: iPad13,8, os-version: 16.0], [device: iPad13,8, os-version: 15.0], [device: iPad13,6, os-version: 15.0], [device: iPad13,1, os-version: 15.0], [device: iPad13,11, os-version: 15.0], [device: iPad8,1, os-version: 15.0], [device: iPad8,8, os-version: 15.0], [device: iPad7,1, os-version: 16.0], [device: iPad11,2, os-version: 15.0], [device: MacFamily20,1, os-version: 15.0], [device: iPad11,3, os-version: 15.0], [device: iPad13,1, os-version: 16.0], [device: iPad13,2, os-version: 16.0], [device: iPad8,2, os-version: 16.0], [device: iPad8,9, os-version: 16.0], [device: iPad13,9, os-version: 16.0], [device: iPad8,6, os-version: 16.0], [device: iPad7,2, os-version: 16.0], [device: MacFamily20,1, os-version: 16.0], [device: iPad13,16, os-version: 15.0], [device: iPad14,3-A, os-version: 16.0], [device: iPad8,8, os-version: 16.0], [device: iPad8,7, os-version: 15.0], [device: iPad8,11, os-version: 16.0], [device: iPad11,2, os-version: 16.0], [device: iPad8,10, os-version: 15.0], [device: iPad13,7, os-version: 15.0], [device: iPad7,3, os-version: 15.0], [device: iPad13,17, os-version: 15.0], [device: iPad8,2, os-version: 15.0], [device: iPad8,9, os-version: 15.0], [device: iPad11,1, os-version: 15.0], [device: iPad7,4, os-version: 16.0], [device: iPad13,9, os-version: 15.0], [device: iPad14,4-B, os-version: 16.0], [device: iPad14,1, os-version: 16.0], [device: iPad14,2, os-version: 15.0], [device: iPad13,5, os-version: 16.0], [device: iPad8,1, os-version: 16.0], [device: iPad8,5, os-version: 16.0], [device: iPad14,5-A, os-version: 16.0], [device: iPad14,3-B, os-version: 16.0], [device: iPad8,12, os-version: 16.0], [device: iPad7,3, os-version: 16.0], [device: iPad8,11, os-version: 15.0], [device: iPad13,5, os-version: 15.0], [device: iPad6,3, os-version: 15.0], [device: iPad8,7, os-version: 16.0], [device: iPad14,2, os-version: 16.0], [device: iPad13,6, os-version: 16.0], [device: iPad8,4, os-version: 16.0], [device: iPad8,4, os-version: 15.0], [device: iPad14,4-A, os-version: 16.0], [device: iPad8,3, os-version: 16.0], [device: iPad7,4, os-version: 15.0], [device: iPad13,16, os-version: 16.0], [device: iPad7,1, os-version: 15.0], [device: iPad13,4, os-version: 16.0], [device: iPad13,11, os-version: 16.0], [device: iPad13,10, os-version: 16.0], [device: iPad11,4, os-version: 15.0], [device: iPad13,2, os-version: 15.0], [device: iPad8,12, os-version: 15.0], [device: iPad13,10, os-version: 15.0], [device: iPad6,3, os-version: 16.0], [device: iPad13,4, os-version: 15.0], [device: iPad8,10, os-version: 16.0], and [device: iPad11,1, os-version: 16.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-539282B8-EBD6-4F59-9926-17C9D560CBCE.ipa
+Supported variant descriptors: [device: iPhone11,2, os-version: 15.0], [device: iPhone12,3, os-version: 16.0], [device: iPhone14,2, os-version: 16.0], [device: iPhone13,4, os-version: 16.0], [device: iPhone13,1, os-version: 15.0], [device: iPhone13,2, os-version: 15.0], [device: iPhone10,6, os-version: 15.0], [device: iPhone14,2, os-version: 15.0], [device: iPhone13,1, os-version: 16.0], [device: iPhone10,3, os-version: 16.0], [device: iPhone10,2, os-version: 15.0], [device: iPhone14,5, os-version: 16.0], [device: iPhone9,2, os-version: 15.0], [device: iPhone11,2, os-version: 16.0], [device: iPhone12,3, os-version: 15.0], [device: iPhone14,4, os-version: 16.0], [device: iPhone13,3, os-version: 16.0], [device: iPhone10,5, os-version: 15.0], [device: iPhone15,3, os-version: 16.0], [device: iPhone12,5, os-version: 16.0], [device: iPhone13,4, os-version: 15.0], [device: iPhone14,4, os-version: 15.0], [device: iPhone13,2, os-version: 16.0], [device: iPhone10,3, os-version: 15.0], [device: iPhone13,3, os-version: 15.0], [device: iPhone11,6, os-version: 16.0], [device: iPhone11,4, os-version: 15.0], [device: iPhone14,8, os-version: 16.0], [device: iPhone10,5, os-version: 16.0], [device: iPhone10,6, os-version: 16.0], [device: iPhone11,6, os-version: 15.0], [device: iPhone14,5, os-version: 15.0], [device: iPhone9,4, os-version: 15.0], [device: iPhone14,3, os-version: 15.0], [device: iPhone15,2, os-version: 16.0], [device: iPhone14,7, os-version: 16.0], [device: iPhone14,3, os-version: 16.0], [device: iPhone12,5, os-version: 15.0], [device: iPhone11,4, os-version: 16.0], and [device: iPhone10,2, os-version: 16.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-6435B750-63E4-4461-875E-F3BA89F44757.ipa
+Supported variant descriptors: [device: iPhone8,1, os-version: 11.0], [device: iPhone7,2, os-version: 11.0], [device: iPhone6,1, os-version: 11.0], [device: iPod7,1, os-version: 11.0], [device: iPhone6,2, os-version: 11.0], and [device: iPhone8,4, os-version: 11.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-6F8E6410-808C-43E8-B8E9-7E18F4486383.ipa
+Supported variant descriptors: [device: iPhone11,8, os-version: 12.2]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-7357E605-4199-4ABE-B2B8-53D41BFC2504.ipa
+Supported variant descriptors: [device: iPhone10,1, os-version: 15.0], [device: iPhone14,6, os-version: 16.0], [device: iPhone10,1, os-version: 16.0], [device: iPhone12,8, os-version: 15.0], [device: iPhone12,8, os-version: 16.0], [device: iPhone14,6, os-version: 15.0], [device: iPhone9,1, os-version: 15.0], [device: iPhone9,3, os-version: 15.0], [device: iPhone10,4, os-version: 15.0], and [device: iPhone10,4, os-version: 16.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-7F1256CC-71CC-47DC-8723-EE3F73F5883D.ipa
+Supported variant descriptors: [device: iPhone8,4, os-version: 15.0], [device: iPod9,1, os-version: 15.0], and [device: iPhone8,1, os-version: 15.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-812962CC-646B-447C-A7B0-B7076A3A1389.ipa
+Supported variant descriptors: [device: iPhone9,3, os-version: 13.0], [device: iPhone10,1, os-version: 14.0], [device: iPhone9,1, os-version: 13.0], [device: iPhone9,1, os-version: 14.0], [device: iPhone10,1, os-version: 13.0], [device: iPhone12,8, os-version: 14.0], [device: iPhone9,3, os-version: 14.0], [device: iPhone10,4, os-version: 13.0], [device: iPhone12,8, os-version: 13.0], and [device: iPhone10,4, os-version: 14.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-930F3E76-6019-47D2-95C1-EE55C656ACB2.ipa
+Supported variant descriptors: [device: iPad6,11, os-version: 16.0], [device: iPad7,5, os-version: 16.0], [device: iPad6,8, os-version: 15.0], [device: iPad12,2, os-version: 15.0], [device: iPad6,7, os-version: 15.0], [device: iPad7,11, os-version: 16.0], [device: iPad5,3, os-version: 15.0], [device: iPad7,12, os-version: 15.0], [device: iPad5,4, os-version: 15.0], [device: iPad11,7, os-version: 15.0], [device: iPad6,11, os-version: 15.0], [device: iPad12,2, os-version: 16.0], [device: iPad5,2, os-version: 15.0], [device: iPad11,7, os-version: 16.0], [device: iPad13,18, os-version: 16.0], [device: iPad6,7, os-version: 16.0], [device: iPad6,12, os-version: 16.0], [device: iPad12,1, os-version: 15.0], [device: iPad12,1, os-version: 16.0], [device: iPad7,6, os-version: 16.0], [device: iPad7,12, os-version: 16.0], [device: iPad11,6, os-version: 15.0], [device: iPad6,8, os-version: 16.0], [device: iPad13,19, os-version: 16.0], [device: iPad6,12, os-version: 15.0], [device: iPad7,5, os-version: 15.0], [device: iPad7,11, os-version: 15.0], [device: iPad5,1, os-version: 15.0], [device: iPad11,6, os-version: 16.0], and [device: iPad7,6, os-version: 15.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-933143D9-BF47-4D32-8126-B38A1103148E.ipa
+Supported variant descriptors: [device: iPad7,4, os-version: 11.0], [device: iPad7,2, os-version: 11.0], [device: iPad6,3, os-version: 11.0], [device: iPad6,4, os-version: 11.0], [device: iPad7,1, os-version: 11.0], and [device: iPad7,3, os-version: 11.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-93BAC738-0E6D-41C5-8614-83BAAFE09705.ipa
+Supported variant descriptors: [device: iPod7,1, os-version: 12.0], [device: iPhone6,1, os-version: 12.0], [device: iPhone8,4, os-version: 12.0], [device: iPhone7,2, os-version: 12.0], [device: iPhone6,2, os-version: 12.0], and [device: iPhone8,1, os-version: 12.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-9BC92A2C-C7E2-488F-A108-4F5973A9C5E7.ipa
+Supported variant descriptors: [device: iPad7,3, os-version: 12.2], [device: iPad8,7, os-version: 12.2], [device: iPad6,3, os-version: 12.2], [device: iPad7,1, os-version: 12.2], [device: iPad11,1, os-version: 12.2], [device: iPad8,3, os-version: 12.2], [device: iPad7,4, os-version: 12.2], [device: iPad7,2, os-version: 12.2], [device: iPad11,4, os-version: 12.2], [device: iPad8,2, os-version: 12.2], [device: iPad8,4, os-version: 12.2], [device: iPad8,8, os-version: 12.2], [device: iPad8,6, os-version: 12.2], [device: iPad11,2, os-version: 12.2], [device: iPad11,3, os-version: 12.2], [device: iPad8,1, os-version: 12.2], [device: iPad8,5, os-version: 12.2], and [device: iPad6,4, os-version: 12.2]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-B0FA7F02-30CF-420E-9604-6F29E68F901C.ipa
+Supported variant descriptors: [device: iPhone6,2, os-version: 12.2], [device: iPhone7,2, os-version: 12.2], [device: iPhone6,1, os-version: 12.2], [device: iPod7,1, os-version: 12.2], [device: iPod9,1, os-version: 12.2], [device: iPhone8,1, os-version: 12.2], and [device: iPhone8,4, os-version: 12.2]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-B79FA113-6656-4206-AF31-F2453806E716.ipa
+Supported variant descriptors: [device: iPad6,8, os-version: 11.0], [device: iPad4,5, os-version: 11.0], [device: iPad4,8, os-version: 11.0], [device: iPad5,4, os-version: 11.0], [device: iPad7,5, os-version: 11.0], [device: iPad6,11, os-version: 11.0], [device: iPad5,3, os-version: 11.0], [device: iPad4,4, os-version: 11.0], [device: iPad4,6, os-version: 11.0], [device: iPad4,7, os-version: 11.0], [device: iPad4,9, os-version: 11.0], [device: iPad5,1, os-version: 11.0], [device: iPad4,3, os-version: 11.0], [device: iPad6,7, os-version: 11.0], [device: iPad6,12, os-version: 11.0], [device: iPad4,2, os-version: 11.0], [device: iPad7,6, os-version: 11.0], [device: iPad5,2, os-version: 11.0], and [device: iPad4,1, os-version: 11.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-B8BEF690-09E9-40D6-A11C-2968F72F4D49.ipa
+Supported variant descriptors: [device: iPhone9,3, os-version: 12.2], [device: iPhone9,1, os-version: 12.2], [device: iPhone10,1, os-version: 12.2], and [device: iPhone10,4, os-version: 12.2]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-BAC5C08B-4FC6-49D8-ADC4-FF02A341333F.ipa
+Supported variant descriptors: [device: iPad8,8, os-version: 12.0], [device: iPad8,7, os-version: 12.0], [device: iPad8,3, os-version: 12.0], [device: iPad7,2, os-version: 12.0], [device: iPad8,6, os-version: 12.0], [device: iPad7,4, os-version: 12.0], [device: iPad7,1, os-version: 12.0], [device: iPad8,5, os-version: 12.0], [device: iPad8,1, os-version: 12.0], [device: iPad7,3, os-version: 12.0], [device: iPad8,2, os-version: 12.0], [device: iPad8,4, os-version: 12.0], [device: iPad6,3, os-version: 12.0], and [device: iPad6,4, os-version: 12.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-BD2568F4-4B40-4B70-BEEA-D1D9B616119F.ipa
+Supported variant descriptors: [device: iPhone10,3, os-version: 12.2], [device: iPhone11,6, os-version: 12.2], [device: iPhone10,5, os-version: 12.2], [device: iPhone9,4, os-version: 12.2], [device: iPhone11,4, os-version: 12.2], [device: iPhone10,6, os-version: 12.2], [device: iPhone9,2, os-version: 12.2], [device: iPhone11,2, os-version: 12.2], and [device: iPhone10,2, os-version: 12.2]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-C52141AC-9383-4EBB-8AF3-D90A9C23BC56.ipa
+Supported variant descriptors: [device: iPhone8,2, os-version: 15.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-D0036D1C-0547-47E3-AC68-0D7F06AAB6E4.ipa
+Supported variant descriptors: [device: iPhone11,8, os-version: 12.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-D381383E-C6AF-4D29-9EDD-4C3CED2E6094.ipa
+Supported variant descriptors: [device: iPhone8,2, os-version: 12.2] and [device: iPhone7,1, os-version: 12.2]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-DC91C466-3DF8-419F-BCD8-8A8180AACA29.ipa
+Supported variant descriptors: [device: iPhone9,4, os-version: 11.0], [device: iPhone10,2, os-version: 11.0], [device: iPhone10,3, os-version: 11.0], [device: iPhone10,5, os-version: 11.0], [device: iPhone9,2, os-version: 11.0], and [device: iPhone10,6, os-version: 11.0]
+App + On Demand Resources size: 10.1 MB compressed, 28.1 MB uncompressed
+App size: 10.1 MB compressed, 28.1 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-E64F02D2-7077-4C17-BBCB-9DD17C9FAF79.ipa
+Supported variant descriptors: [device: iPad6,12, os-version: 14.0], [device: iPad6,7, os-version: 13.0], [device: iPad6,8, os-version: 14.0], [device: iPad6,11, os-version: 13.0], [device: iPad7,12, os-version: 13.0], [device: iPad7,12, os-version: 14.0], [device: iPad5,4, os-version: 14.0], [device: iPad5,4, os-version: 13.0], [device: iPad6,8, os-version: 13.0], [device: iPad6,7, os-version: 14.0], [device: iPad5,3, os-version: 14.0], [device: iPad5,3, os-version: 13.0], [device: iPad7,6, os-version: 13.0], [device: iPad6,11, os-version: 14.0], [device: iPad5,1, os-version: 14.0], [device: iPad7,5, os-version: 13.0], [device: iPad5,1, os-version: 13.0], [device: iPad7,11, os-version: 13.0], [device: iPad11,6, os-version: 14.0], [device: iPad5,2, os-version: 13.0], [device: iPad11,7, os-version: 14.0], [device: iPad7,11, os-version: 14.0], [device: iPad5,2, os-version: 14.0], [device: iPad7,6, os-version: 14.0], [device: iPad7,5, os-version: 14.0], and [device: iPad6,12, os-version: 13.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart-F7926BE5-27BF-4408-8687-66800406C29F.ipa
+Supported variant descriptors: [device: iPhone8,2, os-version: 14.0] and [device: iPhone8,2, os-version: 13.0]
+App + On Demand Resources size: 7.6 MB compressed, 20.6 MB uncompressed
+App size: 7.6 MB compressed, 20.6 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: DentalKart.ipa
+Supported variant descriptors: Universal
+App + On Demand Resources size: 11.1 MB compressed, 29.2 MB uncompressed
+App size: 11.1 MB compressed, 29.2 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
