@@ -20,6 +20,7 @@ export type Props = {
   textDecorationLine?: TextStyle['textDecorationLine'];
   lineHeight?: keyof typeof Sizes;
   children?: React.ReactElement;
+  selectable?: boolean;
 } & LabelType;
 
 const Label = ({
@@ -39,12 +40,14 @@ const Label = ({
   onPress,
   allowFontScaling = false,
   lineHeight, //= 'l',
+  selectable = false,
   ...other
 }: Props) => {
   const {colors} = useTheme();
 
   return (
     <Text
+      selectable={selectable}
       onPress={onPress}
       allowFontScaling={allowFontScaling}
       key={index}
