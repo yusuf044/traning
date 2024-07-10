@@ -1,4 +1,5 @@
 package com.traning
+import com.oblador.vectoricons.VectorIconsPackage;
 
 import android.app.Application
 import com.facebook.react.PackageList
@@ -20,6 +21,7 @@ class MainApplication : Application(), ReactApplication {
               // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
                //add(new RNReactNativeHapticFeedbackPackage())
+              //add(new VectorIconsPackage())
             }
 
         override fun getJSMainModuleName(): String = "index"

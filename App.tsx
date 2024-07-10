@@ -8,10 +8,13 @@
 import React, {PropsWithChildren, useState} from 'react';
 import {
   Button,
+  FlatList,
   Image,
   ImageSourcePropType,
+  Pressable,
   ScrollView,
   StyleSheet,
+  Text,
   TextInput,
   useColorScheme,
   View,
@@ -31,7 +34,8 @@ import For from './src/assets/images/pasa4.png';
 import FIve from './src/assets/images/pasa5.png';
 import Six from './src/assets/images/pasa6.png';
 import {Sizes} from './src/common';
-import {Label} from './src/components/atoms';
+import {CurrencyButton, Label, VectorIcons} from './src/components/atoms';
+import {currencyByRupee} from './src/counteryList';
 
 type DiceProps = PropsWithChildren<{
   imageURl: ImageSourcePropType;
@@ -188,10 +192,93 @@ function App(): React.JSX.Element {
     }
   };
 
+  //Game
+  const [isCross, setIsCross] = useState<boolean>(false);
+  const [gameWinner, setGameWinner] = useState<string>('');
+  const [gameState, setGameState] = useState(new Array(9).fill('empty', 0, 9));
+  console.log('gameState========gameState', gameState);
+
+  const reloadGame = () => {
+    setIsCross(false);
+    setGameWinner('');
+    setGameState(new Array(9).fill('empty', 0, 9));
+  };
+
+  const checkIsWinner = () => {
+    if (
+      gameState[0] === gameState[1] &&
+      gameState[0] === gameState[2] &&
+      gameState[0] !== 'empty'
+    ) {
+      setGameWinner(`${gameState[0]} won the game!`);
+    } else if (
+      gameState[3] !== 'empty' &&
+      gameState[3] === gameState[4] &&
+      gameState[4] === gameState[5]
+    ) {
+      setGameWinner(`${gameState[3]} won the game!`);
+    } else if (
+      gameState[6] !== 'empty' &&
+      gameState[6] === gameState[7] &&
+      gameState[7] === gameState[8]
+    ) {
+      setGameWinner(`${gameState[6]} won the game!`);
+    } else if (
+      gameState[0] !== 'empty' &&
+      gameState[0] === gameState[3] &&
+      gameState[3] === gameState[6]
+    ) {
+      setGameWinner(`${gameState[0]} won the game!`);
+    } else if (
+      gameState[2] !== 'empty' &&
+      gameState[2] === gameState[5] &&
+      gameState[5] === gameState[8]
+    ) {
+      setGameWinner(`${gameState[2]} won the game!`);
+    } else if (
+      gameState[0] !== 'empty' &&
+      gameState[0] === gameState[4] &&
+      gameState[4] === gameState[8]
+    ) {
+      setGameWinner(`${gameState[0]} won the game!`);
+    } else if (
+      gameState[2] !== 'empty' &&
+      gameState[2] === gameState[4] &&
+      gameState[4] === gameState[6]
+    ) {
+      setGameWinner(`${gameState[2]} won the game!`);
+    } else if (!gameState.includes('empty', 0)) {
+      setGameWinner('Draw game............');
+    }
+  };
+  const onChangeItem = (itemNumber: number) => {
+    if (gameWinner) {
+      return Snackbar.show({
+        text: 'Game winner',
+        textColor: '#FFF',
+        backgroundColor: '#000',
+      });
+    }
+    if (gameState[itemNumber] === 'empty') {
+      console.log('=======isCross', isCross);
+
+      gameState[itemNumber] = isCross ? 'cross' : 'circle';
+      setIsCross(!isCross);
+    } else {
+      return Snackbar.show({
+        text: 'Position is already filled ',
+        textColor: '#FFF',
+        backgroundColor: 'red',
+      });
+    }
+    checkIsWinner();
+  };
+
   return (
-    <ScrollView keyboardShouldPersistTaps="handled">
-      <SafeAreaView style={{backgroundColor: randomBackground, flex: 1}}>
-        <View style={styles.formContinuer}>
+    <View style={styles.container}>
+      {/* // <ScrollView style={styles.container} keyboardShouldPersistTaps="handled"> */}
+      {/* <SafeAreaView style={{backgroundColor: randomBackground, flex: 1}}> */}
+      {/* <View style={styles.formContinuer}>
           <Label
             align="center"
             weight={'800'}
@@ -214,7 +301,6 @@ function App(): React.JSX.Element {
               isSubmitting,
               isValid,
               handleReset,
-              /* and other goodies */
             }) => (
               <>
                 <View style={styles.inputWrapper}>
@@ -292,8 +378,8 @@ function App(): React.JSX.Element {
               </>
             )}
           </Formik>
-        </View>
-        {isPassGenerated ? (
+        </View> */}
+      {/* {isPassGenerated ? (
           <View
             style={{
               backgroundColor: '#FFF',
@@ -312,17 +398,114 @@ function App(): React.JSX.Element {
               text={password}
             />
           </View>
-        ) : null}
+        ) : null} */}
 
-        <View style={{marginTop: 10}}>
+      {/* <View style={{marginTop: 10}}>
           <Button onPress={generateColor} title={'Press Me colors changed'} />
         </View>
         <Dice imageURl={diceImage} />
         <View style={{marginTop: 10}}>
           <Button onPress={rollDicesOTop} title="Click" />
+        </View> */}
+
+      {/* currecy convert===========  */}
+
+      {/* <View style={styles.topContainer}>
+        <View style={styles.rupeesCotiounner}>
+          <Label size="x4l" text={'₹'} />
+          <TextInput
+            style={{marginLeft: 10, borderBottomWidth: 0.4}}
+            maxLength={14}
+            value={inputValue}
+            onChangeText={setInputValue}
+            keyboardType="number-pad"
+            placeholder="Enter amount in Rupess"
+          />
         </View>
-      </SafeAreaView>
-    </ScrollView>
+        {resultValue && (
+          <Label
+            style={{marginTop: 10}}
+            size="x5l"
+            weight={'800'}
+            text={resultValue}
+          />
+        )}
+      </View>
+      <View style={{}}>
+        <FlatList
+          numColumns={3}
+          data={currencyByRupee}
+          keyExtractor={item => item.name}
+          renderItem={({item}) => (
+            <Pressable
+              style={[
+                styles.button,
+                targetCurrency === item.name && styles.selected,
+              ]}
+              onPress={() => buttonPressed(item)}>
+              <CurrencyButton {...item} />
+            </Pressable>
+          )}
+        />
+      </View> */}
+      {/* </SafeAreaView> */}
+
+      {/* Game ==============*/}
+      {gameWinner ? (
+        <View style={[styles.playerInfo, styles.winnerInfo]}>
+          <Label
+            size="xl"
+            weight={'600'}
+            style={styles.winnerText}
+            text={gameWinner}
+          />
+        </View>
+      ) : (
+        <View
+          style={[
+            styles.playerInfo,
+            isCross ? styles.playerX : styles.playerO,
+          ]}>
+          <Label
+            size="xl"
+            weight={'600'}
+            style={styles.gameTurnTex}
+            text={`player ${isCross ? 'X' : 'O'} 's Turn`}
+          />
+        </View>
+      )}
+      {/* Game Grid */}
+      {console.log('gameState=========', gameState)}
+
+      <FlatList
+        numColumns={3}
+        data={gameState}
+        style={styles.grid}
+        ListFooterComponent={
+          <Pressable style={styles.gameButton} onPress={reloadGame}>
+            <Label
+              size="xl"
+              weight={'500'}
+              style={styles.gameBtnText}
+              text={gameWinner ? 'Start New game ' : 'Reload  The Game'}
+            />
+          </Pressable>
+        }
+        renderItem={({item, index}) => {
+          console.log('Item:===============', item);
+          console.log('Index:', index);
+          return (
+            <Pressable
+              key={index}
+              style={styles.card}
+              onPress={() => onChangeItem(index)}>
+              <VectorIcons name={item} />
+            </Pressable>
+          );
+        }}
+      />
+    </View>
+    // {/* </ScrollView> */}
   );
 }
 
@@ -339,6 +522,97 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+  },
+  container: {flex: 1, backgroundColor: '#f2f7fc'},
+  topContainer: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  button: {
+    padding: 4,
+    borderRadius: 10,
+    elevation: 8,
+    backgroundColor: '#999999',
+    margin: 10,
+  },
+  selected: {backgroundColor: '#FFF'},
+  resultText: {
+    fontSize: 32,
+    color: '#000000',
+    fontWeight: '800',
+  },
+  rupee: {
+    marginRight: 8,
+    fontSize: 22,
+    color: '#000000',
+    fontWeight: '800',
+  },
+  rupeesCotiounner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#FFB3B3',
+    padding: 10,
+  },
+  inputAmountFiled: {height: 40},
+  bottomContiouner: {},
+
+  //Game
+  playerInfo: {
+    height: 56,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 4,
+    paddingVertical: 8,
+    margin: 13,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowColor: '#333',
+    shadowRadius: 1.5,
+  },
+  gameTurnTex: {
+    color: 'white',
+  },
+  playerX: {
+    backgroundColor: '#38CC77',
+  },
+  playerO: {
+    backgroundColor: '#F7CD2E',
+  },
+  grid: {
+    margin: 12,
+  },
+  card: {
+    width: '33.33%',
+    height: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 0.5,
+    borderColor: '#333',
+  },
+  winnerInfo: {
+    borderRadius: 8,
+    backgroundColor: '#38CC77',
+    shadowOpacity: 0.1,
+  },
+  winnerText: {
+    color: 'white',
+
+    textTransform: 'capitalize',
+  },
+  gameButton: {
+    alignItems: 'center',
+    padding: 10,
+    borderRadius: 8,
+    marginHorizontal: 36,
+    backgroundColor: '#8D3DAF',
+    marginTop: 20,
+  },
+  gameBtnText: {
+    color: 'white',
   },
 });
 

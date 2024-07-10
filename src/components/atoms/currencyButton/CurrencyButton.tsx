@@ -8,9 +8,18 @@ type CurrencyButtonProps = PropsWithChildren<{
 
 const CurrencyButton = (props: CurrencyButtonProps): JSX.Element => {
   return (
-    <View style={{alignItems: 'center'}}>
+    <View
+      style={{
+        alignItems: 'center',
+
+        width: 100,
+        height: 50,
+        justifyContent: 'center',
+
+        padding: 5,
+      }}>
       <Label text={props.flag} />
-      <Label text={props.name} />
+      <Label style={{marginTop: 4}} size="m" align="center" text={props.name} />
     </View>
   );
 };
