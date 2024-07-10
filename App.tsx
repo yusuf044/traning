@@ -5,8 +5,9 @@
  * @format
  */
 
-import React, {PropsWithChildren, useState} from 'react';
+import React, {PropsWithChildren, useEffect, useState} from 'react';
 import {
+  ActivityIndicator,
   Button,
   FlatList,
   Image,
@@ -36,6 +37,7 @@ import Six from './src/assets/images/pasa6.png';
 import {Sizes} from './src/common';
 import {CurrencyButton, Label, VectorIcons} from './src/components/atoms';
 import {currencyByRupee} from './src/counteryList';
+import {addTrack, setupPlayer} from './playBackService';
 
 type DiceProps = PropsWithChildren<{
   imageURl: ImageSourcePropType;
@@ -274,6 +276,25 @@ function App(): React.JSX.Element {
     checkIsWinner();
   };
 
+  //Spotify Player
+
+  const [isPlayerReady, setIsPlayerReady] = useState(false);
+  async function setup() {
+    let isSetup = await setupPlayer();
+    if (isSetup) {
+      await addTrack();
+    }
+  }
+  useEffect(() => {
+    setup();
+  }, []);
+  if (!isPlayerReady) {
+    return (
+      <SafeAreaView>
+        <ActivityIndicator />
+      </SafeAreaView>
+    );
+  }
   return (
     <View style={styles.container}>
       {/* // <ScrollView style={styles.container} keyboardShouldPersistTaps="handled"> */}
@@ -451,7 +472,7 @@ function App(): React.JSX.Element {
       {/* </SafeAreaView> */}
 
       {/* Game ==============*/}
-      {gameWinner ? (
+      {/* {gameWinner ? (
         <View style={[styles.playerInfo, styles.winnerInfo]}>
           <Label
             size="xl"
@@ -473,11 +494,10 @@ function App(): React.JSX.Element {
             text={`player ${isCross ? 'X' : 'O'} 's Turn`}
           />
         </View>
-      )}
+      )} */}
       {/* Game Grid */}
-      {console.log('gameState=========', gameState)}
 
-      <FlatList
+      {/* <FlatList
         numColumns={3}
         data={gameState}
         style={styles.grid}
@@ -503,7 +523,10 @@ function App(): React.JSX.Element {
             </Pressable>
           );
         }}
-      />
+      /> */}
+
+      {/* Spotify Palyer */}
+      <Label text={'Music'} />
     </View>
     // {/* </ScrollView> */}
   );
