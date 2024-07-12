@@ -2,11 +2,12 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {useProgress} from 'react-native-track-player';
 import Slider from '@react-native-community/slider';
-import styles from '../flatCards/styles';
+
 import Label from '../label';
 
 const SongSlider = () => {
   const {position, duration} = useProgress();
+  console.log('position===========', position);
 
   return (
     <View>

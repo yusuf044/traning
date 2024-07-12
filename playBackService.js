@@ -15,6 +15,7 @@ export async function setupPlayer() {
 }
 
 export async function addTrack() {
+  console.log('===========playbackplayListData', playListData);
   await TrackPlayer.add(playListData);
   await TrackPlayer.setRepeatMode(RepeatMode.Queue);
 }

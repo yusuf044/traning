@@ -6,6 +6,8 @@ type SongsInfoProps = PropsWithChildren<{
   track: Track | null | undefined;
 }>;
 const SongsInfo = ({track}: SongsInfoProps) => {
+  console.log('=============track', track);
+
   return (
     <View style={styles.contiouner}>
       <View>

@@ -1,26 +1,55 @@
-import {Dimensions, Image, StyleSheet, Text, View} from 'react-native';
 import React, {useState} from 'react';
-import TrackPlayer, {Track, useTrackPlayerEvents,Event} from 'react-native-track-player';
+import {Dimensions, FlatList, Image, StyleSheet, View} from 'react-native';
+import TrackPlayer, {
+  Event,
+  Track,
+  useTrackPlayerEvents,
+} from 'react-native-track-player';
+import {
+  ControlsCenter,
+  Label,
+  SongsInfo,
+  SongSlider,
+} from '../components/atoms';
+import {playListData} from '../player';
 const {width} = Dimensions.get('window');
-
-
 
 const MusicPlayer = () => {
   const [track, setTrack] = useState<Track | null>();
 
-useTrackPlayerEvents([Event.PlaybackTrackChanged],async
-    event=>{
-        switch(event.type){
-            case Event.PlaybackTrackChanged:
-                const playingTrack=await
-                TrackPlayer.getTrack(event.nextTrack)
-                setTrack(playingTrack)
-                break;
+  // useTrackPlayerEvents([Event.PlaybackTrackChanged], async
+  //     event => {
+  //     switch (event.type) {
+  //       case Event.PlaybackTrackChanged:
+  //         const playingTrack = await TrackPlayer.getTrack(event.nextTrack)
+  //         setTrack(playingTrack)
+  //         break;
+  //     }
+  //   })
+  useTrackPlayerEvents([Event.PlaybackTrackChanged], async event => {
+    switch (event.type) {
+      case Event.PlaybackTrackChanged:
+        try {
+          console.log('FirstCase ============');
+
+          const playingTrack = await TrackPlayer.getTrack(event?.nextTrack);
+          console.log(
+            'FirstCase under Funcatio ============',
+            event?.nextTrack,
+          );
+          setTrack(playingTrack);
+        } catch (error) {
+          console.error('Error fetching track:=======', error);
         }
+        break;
     }
-)
+  });
   const renderArtWork = () => {
-    <View style={styles.listArtWrapper}>a
+    {
+      console.log('under renderItems===$$$$$22', track?.artwork);
+    }
+    <View style={styles.listArtWrapper}>
+      <Label text={'hellow render'} />
       <View style={styles.albumContainer}>
         {track?.artwork && (
           <Image
@@ -32,8 +61,20 @@ useTrackPlayerEvents([Event.PlaybackTrackChanged],async
     </View>;
   };
   return (
-    <View>
-      <Text>musicPlayer</Text>
+    <View style={styles.container}>
+      <FlatList
+        horizontal
+        renderItem={renderArtWork}
+        data={playListData}
+        keyExtractor={song => song?.id.toString()}
+      />
+      {console.log(
+        'playListData==============playListDataplayListData1111111111',
+        playListData,
+      )}
+      <SongsInfo track={track} />
+      <SongSlider />
+      <ControlsCenter />
     </View>
   );
 };

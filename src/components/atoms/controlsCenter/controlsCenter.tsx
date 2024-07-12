@@ -1,33 +1,66 @@
-import {View, Text, StyleSheet, Pressable} from 'react-native';
+import {View, Text, StyleSheet, Pressable, Alert} from 'react-native';
 import React from 'react';
 import TrackPlayer, {State, usePlaybackState} from 'react-native-track-player';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {playbackService} from '../../../../playBackService';
+import Label from '../label';
 
 const ControlsCenter = () => {
   const playBackState = usePlaybackState();
+  console.log('playBackState==========ggggg', playBackState);
+
   //Next button
   const skipToNext = async () => {
-    await TrackPlayer.skipToNext();
+    await TrackPlayer?.skipToNext();
   };
   //Previous button
   const skipToPrevious = async () => {
-    TrackPlayer.skipToPrevious();
+    TrackPlayer?.skipToPrevious();
   };
+  // const togglePlayBack = async (playBack: State) => {
+  //   const currentTrack = await TrackPlayer.getCurrentTrack();
+  //   if (currentTrack !== null) {
+  //     if (playBack === State.Paused || playBack === State.Ready) {
+  //       await TrackPlayer.play();
+  //     } else {
+  //       await TrackPlayer.pause();
+  //     }
+  //   }
+  // };
   const togglePlayBack = async (playBack: State) => {
-    const currentTrack = await TrackPlayer.getCurrentTrack();
-    if (currentTrack !== null) {
-      if (playBack === State.Paused || playBack === State.Ready) {
-        await TrackPlayer.play();
+    try {
+      const currentTrack = await TrackPlayer.getCurrentTrack();
+      console.log('currentTrack=========currentTrack', currentTrack);
+
+      if (currentTrack !== null) {
+        console.log(
+          'playBack === State.Paused || playBack === State.Ready**********',
+          playBack === State.Paused || playBack === State.Ready,
+        );
+
+        if (playBack === State.Paused || playBack === State.Ready) {
+          await TrackPlayer.play();
+        } else {
+          await TrackPlayer.pause();
+        }
       } else {
-        await TrackPlayer.pause();
+        console.warn('No track is currently playing.');
       }
+    } catch (error) {
+      console.error('Error toggling playback:', error);
+      // Handle error as needed (e.g., show a message to the user)
     }
   };
+
+  console.log(
+    'State===============playBackState === State.Playing',
+    playBackState === State.Playing,
+  );
+
   return (
     <View style={styles.container}>
       <Pressable onPress={skipToPrevious}>
-        <Icon style={styles.icon} name="skip-previous" size={40} />
+        <Icon style={styles.icon} name="chevron-left" size={40} />
       </Pressable>
       <Pressable
         onPress={() => {
@@ -35,12 +68,17 @@ const ControlsCenter = () => {
         }}>
         <Icon
           style={styles.icon}
-          name={playBackState === State.Playing ? 'pause' : 'play-arrow'}
-          size={75}
+          name={playBackState === State.Playing ? 'play' : 'pause'}
+          size={55}
+        />
+        <Label
+          style={styles.icon}
+          size="xxl"
+          text={playBackState === State.Playing ? 'pause' : 'play....'}
         />
       </Pressable>
       <Pressable onPress={skipToNext}>
-        <Icon style={styles.icon} name="skip-next" size={40} />
+        <Icon style={styles.icon} name="chevron-right" size={40} />
       </Pressable>
     </View>
   );
@@ -53,6 +91,9 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'space-evenly',
+
+    width: '80%',
   },
   icon: {
     color: '#FFFFFF',

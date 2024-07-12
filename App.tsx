@@ -14,6 +14,7 @@ import {
   ImageSourcePropType,
   Pressable,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   TextInput,
@@ -38,6 +39,7 @@ import {Sizes} from './src/common';
 import {CurrencyButton, Label, VectorIcons} from './src/components/atoms';
 import {currencyByRupee} from './src/counteryList';
 import {addTrack, setupPlayer} from './playBackService';
+import MusicPlayer from './src/screen/musicPlayer';
 
 type DiceProps = PropsWithChildren<{
   imageURl: ImageSourcePropType;
@@ -288,146 +290,138 @@ function App(): React.JSX.Element {
   useEffect(() => {
     setup();
   }, []);
-  if (!isPlayerReady) {
-    return (
-      <SafeAreaView>
-        <ActivityIndicator />
-      </SafeAreaView>
-    );
-  }
+  // if (!isPlayerReady) {
+  //   return (
+  //     <SafeAreaView>
+  //       <ActivityIndicator />
+  //     </SafeAreaView>
+  //   );
+  // }
   return (
-    <View style={styles.container}>
-      {/* // <ScrollView style={styles.container} keyboardShouldPersistTaps="handled"> */}
-      {/* <SafeAreaView style={{backgroundColor: randomBackground, flex: 1}}> */}
-      {/* <View style={styles.formContinuer}>
-          <Label
-            align="center"
-            weight={'800'}
-            size="xxl"
-            text={'Password Generated'}
-          />
-          <Formik
-            initialValues={{passwordLength: ''}}
-            validationSchema={passwordSchema}
-            onSubmit={values => {
-              generatePasswordString(values.passwordLength);
-            }}>
-            {({
-              values,
-              errors,
-              touched,
-              handleChange,
-              handleBlur,
-              handleSubmit,
-              isSubmitting,
-              isValid,
-              handleReset,
-            }) => (
-              <>
-                <View style={styles.inputWrapper}>
-                  <View style={[styles.row, {marginTop: 10}]}>
-                    <Label text={'Password Legth'} />
-                    <TextInput
-                      style={styles.inputStyle}
-                      value={values.passwordLength}
-                      onChangeText={handleChange('passwordLength')}
-                      placeholder="Ex...1"
-                      keyboardType="numeric"
-                    />
-                  </View>
-                  {touched.passwordLength && errors.passwordLength && (
-                    <Label
-                      style={{color: 'red'}}
-                      text={errors.passwordLength}
-                    />
-                  )}
-                </View>
-                <View style={[styles.inputWrapper, {marginTop: 10}]}>
-                  <BouncyCheckbox
-                    style={{margin: 10}}
-                    isChecked={loweCase}
-                    fillColor="red"
-                    text="include LoweCase"
-                    onPress={() => {
-                      setLoweCase(!loweCase);
-                    }}
-                  />
-                  <BouncyCheckbox
-                    style={{margin: 10}}
-                    isChecked={upperCase}
-                    fillColor="red"
-                    text="include upperCase"
-                    onPress={() => {
-                      setUpperCase(!upperCase);
-                    }}
-                  />
-                  <BouncyCheckbox
-                    style={{margin: 10}}
-                    isChecked={number}
-                    fillColor="red"
-                    text="include number"
-                    onPress={() => {
-                      setNumber(!number);
-                    }}
-                  />
-                  <BouncyCheckbox
-                    style={{margin: 10}}
-                    isChecked={symbols}
-                    fillColor="red"
-                    text="include symbols"
-                    onPress={() => {
-                      setSymbols(!symbols);
-                    }}
+    //   <View style={styles.container}>
+    <ScrollView style={styles.container} keyboardShouldPersistTaps="handled">
+      {/* //     <SafeAreaView style={{backgroundColor: randomBackground, flex: 1}}> */}
+      <View style={styles.formContinuer}>
+        <Label
+          align="center"
+          weight={'800'}
+          size="xxl"
+          text={'Password Generated'}
+        />
+        <Formik
+          initialValues={{passwordLength: ''}}
+          validationSchema={passwordSchema}
+          onSubmit={values => {
+            generatePasswordString(values.passwordLength);
+          }}>
+          {({
+            values,
+            errors,
+            touched,
+            handleChange,
+            handleBlur,
+            handleSubmit,
+            isSubmitting,
+            isValid,
+            handleReset,
+          }) => (
+            <>
+              <View style={styles.inputWrapper}>
+                <View style={[styles.row, {marginTop: 10}]}>
+                  <Label text={'Password Legth'} />
+                  <TextInput
+                    style={styles.inputStyle}
+                    value={values.passwordLength}
+                    onChangeText={handleChange('passwordLength')}
+                    placeholder="Ex...1"
+                    keyboardType="numeric"
                   />
                 </View>
-                <View style={[styles.formAction, styles.row, {marginTop: 10}]}>
-                  <Button
-                    sty
-                    disabled={!isValid}
-                    onPress={handleSubmit}
-                    title="generated Password"
-                  />
-                  <Button
-                    disabled={!isValid}
-                    onPress={() => {
-                      handleReset();
-                      resetPasswordState();
-                    }}
-                    title="reset"
-                  />
-                </View>
-              </>
-            )}
-          </Formik>
-        </View> */}
-      {/* {isPassGenerated ? (
-          <View
-            style={{
-              backgroundColor: '#FFF',
-              elevation: 5,
-              marginHorizontal: 10,
-              padding: 5,
-              alignItems: 'center',
-              marginTop: 10,
-            }}>
-            <Label text={'Long Press to copy '} />
-            <Label text={'Result :'} />
-            <Label
-              weight={'900'}
-              selectable={true}
-              size="xxl"
-              text={password}
-            />
-          </View>
-        ) : null} */}
-
-      {/* <View style={{marginTop: 10}}>
-          <Button onPress={generateColor} title={'Press Me colors changed'} />
+                {touched.passwordLength && errors.passwordLength && (
+                  <Label style={{color: 'red'}} text={errors.passwordLength} />
+                )}
+              </View>
+              <View style={[styles.inputWrapper, {marginTop: 10}]}>
+                <BouncyCheckbox
+                  style={{margin: 10}}
+                  isChecked={loweCase}
+                  fillColor="red"
+                  text="include LoweCase"
+                  onPress={() => {
+                    setLoweCase(!loweCase);
+                  }}
+                />
+                <BouncyCheckbox
+                  style={{margin: 10}}
+                  isChecked={upperCase}
+                  fillColor="red"
+                  text="include upperCase"
+                  onPress={() => {
+                    setUpperCase(!upperCase);
+                  }}
+                />
+                <BouncyCheckbox
+                  style={{margin: 10}}
+                  isChecked={number}
+                  fillColor="red"
+                  text="include number"
+                  onPress={() => {
+                    setNumber(!number);
+                  }}
+                />
+                <BouncyCheckbox
+                  style={{margin: 10}}
+                  isChecked={symbols}
+                  fillColor="red"
+                  text="include symbols"
+                  onPress={() => {
+                    setSymbols(!symbols);
+                  }}
+                />
+              </View>
+              <View style={[styles.formAction, styles.row, {marginTop: 10}]}>
+                <Button
+                  sty
+                  disabled={!isValid}
+                  onPress={handleSubmit}
+                  title="generated Password"
+                />
+                <Button
+                  disabled={!isValid}
+                  onPress={() => {
+                    handleReset();
+                    resetPasswordState();
+                  }}
+                  title="reset"
+                />
+              </View>
+            </>
+          )}
+        </Formik>
+      </View>
+      {isPassGenerated ? (
+        <View
+          style={{
+            backgroundColor: '#FFF',
+            elevation: 5,
+            marginHorizontal: 10,
+            padding: 5,
+            alignItems: 'center',
+            marginTop: 10,
+          }}>
+          <Label text={'Long Press to copy '} />
+          <Label text={'Result :'} />
+          <Label weight={'900'} selectable={true} size="xxl" text={password} />
         </View>
-        <Dice imageURl={diceImage} />
-        <View style={{marginTop: 10}}>
-          <Button onPress={rollDicesOTop} title="Click" />
-        </View> */}
+      ) : null}
+
+      <View style={{marginTop: 10}}>
+        <Button onPress={generateColor} title={'Press Me colors changed'} />
+      </View>
+      <Dice imageURl={diceImage} />
+      <View style={{marginTop: 10}}>
+        <Button onPress={rollDicesOTop} title="Click" />
+      </View>
 
       {/* currecy convert===========  */}
 
@@ -526,9 +520,10 @@ function App(): React.JSX.Element {
       /> */}
 
       {/* Spotify Palyer */}
-      <Label text={'Music'} />
-    </View>
-    // {/* </ScrollView> */}
+      {/* <StatusBar barStyle={'light-content'} />
+      <MusicPlayer />
+    </View> */}
+    </ScrollView>
   );
 }
 
